@@ -3,3 +3,10 @@
     padding: 0;
     
 }
+
+.HomePage{
+    display: flex;
+    flex-direction:column ;
+    justify-content: space-between;
+
+}

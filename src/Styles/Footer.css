@@ -5,15 +5,15 @@
   --accent: #ff9800; /* Accent color */
 }
 .footer-container {
+  width: 100%;
   background-color: var(--dark);
   color: var(--light);
-  padding: 50px 10px;
+  padding: 50px 0px;
 }
 
 .footer-content {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 30px;
 }
 
 .footer-section {
@@ -55,15 +55,22 @@
 .footer-link:hover {
   color: var(--primary);
 }
+.fotter-availability{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
 
+}
 
 .footer-social {
   display: flex;
   gap: 5px;
+  width: 300px;
   flex-direction: row;
   align-items: center;
   justify-content: space-evenly;
-  padding-top: 10px ;
+  padding-top: 20px ;
 }
 
 .footer-social-link {

@@ -1,10 +1,13 @@
 import React from "react";
 import '../Styles/HPmiddle.css';
+import AboutUs from "../Components/AboutUs";
+import Introduction from "../Components/Introduction";
 
 function HPmiddle() {
     return (
         <div>
-            <h1>HPmiddle</h1>
+            <AboutUs/>
+            <Introduction/>
         </div>
     );
 }
