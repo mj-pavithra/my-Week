@@ -1,12 +1,18 @@
 import React from "react";
-import '../Styles/About.css';
+import '../Styles/AboutUs.css';
 
-function About() {
+function AboutUs() {
     return (
         <div className="aboutUs">
-            <h1>About</h1>
+            <h1 className="greeting">
+                Hi...<br/>
+                Plan your week,<br/>
+                Be productive 
+            </h1>
+            <h3 className="slogan" >Become focused, organized, and calm with My Week. <br/>
+            The world best task manager and week plan app.</h3>
         </div>
     );
 }
 
-export default About;
+export default AboutUs;
