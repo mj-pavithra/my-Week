@@ -2,6 +2,7 @@ import React from "react";
 import NavBar from "../Components/NavBar";
 // import Footer from "../Components/Footer";
 // import HPmiddle from "../Components/HPmiddle";
+import Footer from "../Components/Footer";
 import "../Styles/HomePage.css";
 import { type } from "@testing-library/user-event/dist/type";
 
@@ -10,6 +11,7 @@ function HomePage() {
     return (
         <div>
             <NavBar segmentsList ={navSegments} />
+            <Footer />
         </div>
     );
 }
