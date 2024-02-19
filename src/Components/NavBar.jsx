@@ -23,7 +23,7 @@ function NavBar({segmentsList}) {
             <div className="navbar">
                 <LeftNav className="nav-part"/>
                 <MiddleNav className="nav-part" segments={segmentsList}/>
-                {windowWidth > 968 ? <RightNav className="nav-part"/> : null}
+                {windowWidth > 900 ? <RightNav className="nav-part"/> : null}
             </div>
     );
     }

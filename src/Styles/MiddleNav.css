@@ -34,7 +34,7 @@
 
 
 
-@media (max-width: 985px) {
+@media (max-width: 900px) {
     .middle-nav-max {
         display: none;
     }
@@ -42,17 +42,18 @@
     .middle-nav-min {
         display: flex;
         align-items: right;
-
     }
 
     .dropdown-button {
         cursor: pointer;
         background-color: transparent;
         border: none;
-        padding: 5px 10px;
+        size: 25px;
+        padding: 15px 25px;
         position: absolute;
-        top: 40px;
+        top: 30px;
         right: 5vw;
+        border: solid #282c34 1px;
     }
 
     .dropdown-content {
