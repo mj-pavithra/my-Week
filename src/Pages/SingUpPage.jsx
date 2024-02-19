@@ -7,14 +7,14 @@ function SingUpPage() {
     return (
         <div className="sign-up-page">
             <div className="sign-up-form">
-                <h1>Sign Up</h1>
+                <h1 className="Sign-In-Title">Create new account</h1>
                 <form>
-                    <input type="text" placeholder="Username" required/>
-                    <input type="password" placeholder="Password" required/>
-                    <input type="password" placeholder="Confirm Password" required/>
+                    <input className="signup-input" type="text" placeholder="Username" required/>
+                    <input className="signup-input" type="password" placeholder="Password" required/>
+                    <input className="signup-input" type="password" placeholder="Confirm Password" required/>
                     <button type="submit">Sign Up</button>
                 </form>
-                <GoogleLogin
+                <GoogleLogin className="google-sign-up"
                     onSuccess={(CredentialResponse) => console.log(CredentialResponse
                     )}
                     onFailure={(CredentialResponse) => console.log(CredentialResponse
