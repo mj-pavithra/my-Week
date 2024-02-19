@@ -1,0 +1,19 @@
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+
+.navbar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 8vh;
+    font-family: 'Poppins', sans-serif;
+    height: 96px;
+}
+
+.nav-part{
+    padding: 10px;
+}
