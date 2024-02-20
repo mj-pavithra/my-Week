@@ -2,6 +2,7 @@ import React from "react";
 import '../Styles/RightNav.css';
 
 function RightNav() {
+    
     function LoadSignIn(){
         window.location.href = '/signin';
     }
