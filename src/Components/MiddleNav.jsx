@@ -1,8 +1,22 @@
-import React, { useState } from "react";
+
+import React, { useState , useEffect} from "react";
 import "../Styles/MiddleNav.css";
 
 function MiddleNav({ segments }) {
     const [showDropdown, setShowDropdown] = useState(false);
+    const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+
+    useEffect(() => {
+      const handleResize = () => {
+        setWindowWidth(window.innerWidth);
+      };
+  
+      window.addEventListener('resize', handleResize);
+  
+      return () => {
+        window.removeEventListener('resize', handleResize);
+      };
+    }, []);
 
     const toggleDropdown = () => {
         setShowDropdown(!showDropdown);
@@ -21,6 +35,9 @@ function MiddleNav({ segments }) {
                     {segments.map((segment, index) => (
                         <h1 key={index} className="nav-segments-min">{segment}</h1>
                     ))}
+                    {windowWidth < 968 ? <h1 className="nav-segments-min nav-button ">Sign In</h1> : null}
+                    {windowWidth < 968 ? <h1 className="nav-segments-min nav-button ">Sign Up</h1> : null}
+
                 </div>
             </div>
         </div>
