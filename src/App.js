@@ -1,3 +1,4 @@
+
  import logo from './logo.svg';
 import './App.css';
 import HomePage from './Pages/HomePage';
@@ -21,6 +22,7 @@ function App() {
           <Route path="/signup" element={<SignUpPage />} />
         </Routes>
       </BrowserRouter>
+
     </div>
   );
 }

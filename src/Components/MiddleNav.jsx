@@ -1,3 +1,4 @@
+
 import React, { useState , useEffect} from "react";
 import "../Styles/MiddleNav.css";
 
@@ -36,6 +37,7 @@ function MiddleNav({ segments }) {
                     ))}
                     {windowWidth < 968 ? <h1 className="nav-segments-min nav-button ">Sign In</h1> : null}
                     {windowWidth < 968 ? <h1 className="nav-segments-min nav-button ">Sign Up</h1> : null}
+
                 </div>
             </div>
         </div>
