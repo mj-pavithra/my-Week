@@ -41,9 +41,7 @@
     }
 
     .middle-nav-min {
-        display: flex;
-        align-items: right;
-
+        display: block;
     }
 
     .dropdown-button {
