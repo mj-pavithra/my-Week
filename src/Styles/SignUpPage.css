@@ -48,7 +48,7 @@
     margin-bottom: 10px;
     color: #333;
     margin-right: 5px;
-    transition: 0.S;
+    transition: 0.5S;
     background-color: #fff;
     top:15px;
     left: 15px;
@@ -57,7 +57,7 @@
 }
 .active{
     opacity: 1;
-    transition: 0.3S;
+    transition: 0.5S;
 }
 
 .error-message{
@@ -66,6 +66,7 @@
     color: red;
     font-size: 14px;
     text-align: left;
+    transition: 0.5S;
 }
 .required-error{
     color: red;
@@ -102,7 +103,7 @@
     color: #fff;
     font-size: 16px;
     cursor: pointer;
-    transition: background-color 0.3s ease;
+    transition: background-color 0.5s ease;
 }
 
 .google-signup {
@@ -114,7 +115,7 @@
     color: #fff;
     font-size: 16px;
     cursor: pointer;
-    transition: background-color 0.3s ease;
+    transition: background-color 0.5s ease;
 }
 
 .sign-up-form button:hover {
