@@ -22,6 +22,13 @@ function MiddleNav({ segments }) {
         setShowDropdown(!showDropdown);
     };
 
+    function LoadSignIn(){
+        window.location.href = '/signin';
+    }
+    function LoadSignUp(){
+        window.location.href = '/signup';
+    }
+
     return (
         <div className="middle-nav">
             <div className="middle-nav-max">
@@ -35,8 +42,8 @@ function MiddleNav({ segments }) {
                     {segments.map((segment, index) => (
                         <h1 key={index} className="nav-segments-min">{segment}</h1>
                     ))}
-                    {windowWidth < 968 ? <h1 className="nav-segments-min nav-button ">Sign In</h1> : null}
-                    {windowWidth < 968 ? <h1 className="nav-segments-min nav-button ">Sign Up</h1> : null}
+                    {windowWidth < 968 ? <h1 className="nav-segments-min nav-button "  onClick={LoadSignIn}>Sign In</h1> : null}
+                    {windowWidth < 968 ? <h1 className="nav-segments-min nav-button " onClick={LoadSignUp}>Sign Up</h1> : null}
 
                 </div>
             </div>

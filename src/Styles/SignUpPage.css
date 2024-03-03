@@ -19,7 +19,10 @@
     align-items: center;
     justify-content: space-evenly;
 }
+.clasic-border{
+    border: #333 solid 1px;
 
+}
 .Sign-In-Title {
     color: #333;
 }
@@ -29,15 +32,64 @@
     flex-direction: column;
     align-items: center;
 }
+.notice{
+    max-width: 550px;
+    min-width: 350px;
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
 
+}
+
+.input-label {
+    position: relative;
+    opacity: 0;
+    margin-bottom: 10px;
+    color: #333;
+    margin-right: 5px;
+    transition: 0.S;
+    background-color: #fff;
+    top:15px;
+    left: 15px;
+    padding: 0 10px;
+
+}
+.active{
+    opacity: 1;
+    transition: 0.3S;
+}
+
+.error-message{
+    position: relative;
+    top:-10px;
+    color: red;
+    font-size: 14px;
+    text-align: left;
+}
+.required-error{
+    color: red;
+    font-size: 14px;
+    margin-top: 5px;
+    text-align: left;
+    margin-bottom: 10px;
+}
 .signup-input{
-    width: 100%;
+    width: 95%;
     min-width: 250px;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 5px;
     font-size: 16px;
+    background-color: #fff;
+}
+.signup-input.filled{
+    background-color: #fff;
+}
+.signup-input:focus{
+    border: 1px solid #5695d8;
+    outline: none;
 }
 
 .sign-up-form-button {
@@ -78,4 +130,17 @@
     .Sign-In-Title {
         font-size: 24px;
     }
+}
+
+@media screen and (max-width: 600px) {
+    .sign-up-form {
+        padding: 20px;
+    }
+    .signup-input {
+        width: 90%;
+    }
+    .Sign-In-Title {
+        font-size: 20px;
+    }
+    
 }
